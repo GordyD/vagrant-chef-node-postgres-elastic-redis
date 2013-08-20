@@ -17,6 +17,7 @@ The VM image created has the following properties:
   - Vagrant (http://docs.vagrantup.com/v2/installation/index.html)
 
 -- Usage
+
 	git clone
 	cd vagrant-chef-node-postgres-elastic-redis
 	vagrant up
