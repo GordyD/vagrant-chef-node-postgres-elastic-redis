@@ -24,7 +24,7 @@ The VM image created currently has the following properties:
 
 ### Usage
 
-	git clone
+	git clone https://github.com/GordyD/vagrant-chef-node-postgres-elastic-redis.git
 	cd vagrant-chef-node-postgres-elastic-redis
 	vagrant up
 	vagrant ssh
