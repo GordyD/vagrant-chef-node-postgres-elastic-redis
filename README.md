@@ -1,7 +1,13 @@
--- A nginx/Node.js/Postgres/ElasticSearch/Redis VM provisioned by Chef
+# A nginx/Node.js/Postgres/ElasticSearch/Redis Virtual Machine provisioned by Chef
 
-This is a personal experiment to simplify spinning up a dev box.
-The VM image created has the following properties:
+This is a personal experiment to simplify spinning up a dev box for Node.js 
+projects. I intend to expand the provisioning to deploy Yeoman to aid
+in scaffolding new web applications.
+
+Please, please, please feel free to contribute.
+
+
+The VM image created currently has the following properties:
  - Ubuntu 12.10 64 bit
  - nginx
  - Node.js
@@ -11,12 +17,12 @@ The VM image created has the following properties:
  - ElasticSearch Head 
  - Redis
 
--- Requirements
-
+## Requirements
   - VirtualBox (https://www.virtualbox.org)
   - Vagrant (http://docs.vagrantup.com/v2/installation/index.html)
+  - Git 
 
--- Usage
+## Usage
 
 	git clone
 	cd vagrant-chef-node-postgres-elastic-redis
@@ -25,7 +31,7 @@ The VM image created has the following properties:
 	sudo ./postinstall.sh # Run on VM
 
 
--- Optional 
+### Optional 
 
 You can install Librarian Chef to install new cookbooks provided you have Ruby installed. Use the following command:
 
