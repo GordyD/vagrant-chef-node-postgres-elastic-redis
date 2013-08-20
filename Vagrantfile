@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     # Create a NFS shared directory for the application. 
     # N.B NFS will not work first time you start the VM - vagrant ssh in then run sudo ./postinstall.sh
     # This will install the NFS client and tidy up the box after vagrant creation
-    config.vm.synced_folder "../data", "/vagrant_data", :nfs => true
+    config.vm.synced_folder "app", "/vagrant_data", :nfs => true
     # Chef Solo Provisioning - Install all the required infrastructure
     config.vm.provision "chef_solo" do |chef|
 	    chef.cookbooks_path = "cookbooks"
