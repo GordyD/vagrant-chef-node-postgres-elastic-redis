@@ -1,4 +1,4 @@
-# A nginx/Node.js/Postgres/ElasticSearch/Redis Virtual Machine provisioned by Chef
+# A Node.js dev Virtual Machine provisioned by Chef
 
 This is a personal experiment to simplify spinning up a dev box for Node.js 
 projects. I intend to expand the provisioning to deploy Yeoman to aid
