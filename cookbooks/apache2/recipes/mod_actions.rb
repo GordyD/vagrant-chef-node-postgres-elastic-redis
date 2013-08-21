@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: redisio
-# Resource::service
+# Cookbook Name:: apache2
+# Recipe:: actions
 #
-# Copyright 2013, Brian Bianco <brian.bianco@gmail.com>
+# Copyright 2008-2009, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,4 @@
 # limitations under the License.
 #
 
-actions :start, :stop, :restart, :enable, :disable
-
-attribute :server_port, :name_attribute => true
-
-def initialize(name, run_context=nil)
-  super
-  @action = :start
-end
+apache_module "actions"

@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: redisio
-# Resource::uninstall
+# Cookbook Name:: apache2
+# Recipe:: filter
 #
-# Copyright 2013, Brian Bianco <brian.bianco@gmail.com>
+# Copyright 2008-2013, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,12 +17,4 @@
 # limitations under the License.
 #
 
-actions :run, :nothing
-
-attribute :servers, :kind_of => Array, :default => nil
-
-def initialize(name, run_context=nil)
-  super
-  @action = :nothing
-end
-
+apache_module "filter"

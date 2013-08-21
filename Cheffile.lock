@@ -1,7 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    apache2 (1.6.6)
+    apache2 (1.7.0)
     apt (2.1.0)
     ark (0.3.0)
     build-essential (1.4.0)
@@ -38,12 +38,9 @@ SITE
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
-    redisio (1.7.0)
-      ulimit (>= 0.1.2)
     runit (1.1.6)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
-    ulimit (0.3.0)
     windows (1.10.0)
       chef_handler (>= 0.0.0)
     yum (2.3.0)
@@ -57,5 +54,4 @@ DEPENDENCIES
   nginx (>= 0)
   nodejs (>= 0)
   postgresql (>= 0)
-  redisio (>= 0)
 
