@@ -11,6 +11,8 @@ cookbook 'nodejs'
 cookbook 'git'
 cookbook 'elasticsearch'
 cookbook 'elasticsearch-head'
+cookbook 'ruby_build'
+cookbook 'rbenv', git: 'git://github.com/fnichol/chef-rbenv.git', ref: "v0.7.2"
 
 # cookbook 'chef-client'
 
