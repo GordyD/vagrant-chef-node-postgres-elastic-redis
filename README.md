@@ -1,4 +1,4 @@
-## A Node.js dev Virtual Machine provisioned by Chef
+## A Node.js and Rails dev Virtual Machine provisioned by Chef
 
 This is a personal experiment to simplify spinning up a dev box for Node.js 
 projects. I intend to expand the provisioning to deploy Yeoman to aid
@@ -15,7 +15,8 @@ The VM image created currently has the following properties:
  - Java 7 (openjdk)
  - ElasticSearch
  - ElasticSearch Head 
- - Redis
+ - Ruby 2.0.0
+ - Rails 4.0
 
 ### Requirements
   - VirtualBox (https://www.virtualbox.org)
@@ -27,9 +28,8 @@ The VM image created currently has the following properties:
 	git clone https://github.com/GordyD/vagrant-chef-node-postgres-elastic-redis.git
 	cd vagrant-chef-node-postgres-elastic-redis
 	vagrant up
+	vagrant reload
 	vagrant ssh
-	sudo ./postinstall.sh # Run on VM
-
 
 #### Optional 
 
