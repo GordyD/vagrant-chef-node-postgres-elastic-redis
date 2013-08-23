@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     # Create a NFS shared directory for the application. 
     # N.B NFS will not work first time you start the VM - vagrant ssh in then run sudo ./postinstall.sh
     # This will install the NFS client and tidy up the box after vagrant creation
-    config.vm.synced_folder "../data", "/vagrant_data", :nfs => true
+    config.vm.synced_folder "../Code/dev", "/vagrant_data", :nfs => true
     # Chef Solo Provisioning - Install all the required infrastructure
     # config.vm.provision :shell, :inline => "gem install chef --version 11.4.4 --no-rdoc --no-ri --conservative"
     config.vm.provision "chef_solo" do |chef|
@@ -23,6 +23,7 @@ Vagrant.configure("2") do |config|
         chef.add_recipe "postgresql::server"
         chef.add_recipe "java"
         chef.add_recipe "elasticsearch"
+        chef.add_recipe "git"
 
     	chef.json = {
       		"nodejs" => {
@@ -43,5 +44,5 @@ Vagrant.configure("2") do |config|
     	}
     end
 
-    config.vm.provision :shell, :path => "shell/install_angular.sh"
+    config.vm.provision :shell, :path => "shell/provision.sh"
 end
