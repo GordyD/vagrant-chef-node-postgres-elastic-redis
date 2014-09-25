@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
                 "version" => "7"
             },
             "elasticsearch" => {
-                "cluster_name" => "tripjoin_elastic"
+                "cluster_name" => "cheffing_elastic"
             },
             "postgresql" => {
                 "password" => {
